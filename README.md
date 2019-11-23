@@ -1,2 +1,3 @@
-# NetCrackerSQL_Homework
-Here will be stored my homework on SQL course NetCracker
+# NetCracker course | SQL
+
+Homework NetCracker course from 01.10.2019.
