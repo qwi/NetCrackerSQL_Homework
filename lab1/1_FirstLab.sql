@@ -318,10 +318,3 @@ select    pi.product_id,
 select  trunc((to_date(to_char(sysdate, 'dd.mm.yyyy') || '21:30', 'dd.mm.yyyy hh24:mi') - sysdate)* 24*60) as minutes
   from  dual
 ;
-
-
-
-
-
-
-
