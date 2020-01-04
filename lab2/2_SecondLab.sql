@@ -425,28 +425,6 @@ select  c.customer_id,
 
 
 
-/*
-            16. Для каждого сотрудника найти дату начала работы в организации(смотреть и предыдущие места работы) 
-*/
-
-
-
-select  e.employee_id,
-        e.last_name || ' ' || e.first_name as e_name,
-        d.department_name,
-        min(jh.start_date) as start_date
-  from  employees e
-        left join job_history jh on
-          jh.job_id = e.job_id
-        left join departments d on
-          d.department_id = jh.department_id
-  group by  e.employee_id,
-            e.last_name, 
-            e.first_name,
-            d.department_name
-  order by  start_date desc nulls last,
-            e.employee_id
-;
 
 /*
             16. Для каждого сотрудника найти дату начала работы в организации(смотреть и предыдущие места работы)
