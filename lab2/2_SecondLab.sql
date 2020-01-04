@@ -416,19 +416,15 @@ select  c.customer_id,
         ) o3 on 
             o3.customer_id = c.customer_id
   where trunc(o2.order_date, 'dd') - trunc(o1.order_date, 'dd') = o3.min_orders_interval
-  order by c.customer_id
-        
-        
-  
-  
+  order by c.customer_id  
 ;  
-
 
 
 
 /*
             16. Для каждого сотрудника найти дату начала работы в организации(смотреть и предыдущие места работы)
 */            
+
 
 
 select  e.employee_id,
